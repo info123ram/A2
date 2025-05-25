@@ -1,4 +1,3 @@
-
 import os
 import time
 import random
@@ -73,8 +72,8 @@ def main():
 
                 batch.append(pwd)
                 if len(batch) >= 50:
-                    send_log("❌ 50 wrong passwords:
-" + "\n".join(batch))
+                    send_log("""❌ 50 wrong passwords:
+""" + "\n".join(batch))
                     batch = []
 
             except Exception as e:
