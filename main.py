@@ -19,7 +19,7 @@ def send_log(message):
         print("Telegram Error:", e)
 
 def generate_password(length=None):
-    length = length or random.randint(4, 10)
+    length = length or random.randint(6, 10)
     chars = string.ascii_letters + string.digits + "!@#$%^&*"
     return ''.join(random.choices(chars, k=length))
 
